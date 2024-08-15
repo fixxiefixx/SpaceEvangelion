@@ -1,0 +1,17 @@
+Music:
+biotech.xm by Kokesz Public Domain from https://modarchive.org/index.php?request=view_by_moduleid&query=174348
+gone_forever.mod by Zilly Mike CC BY 4.0 https://modarchive.org/index.php?request=view_by_moduleid&query=44003
+cyber_spider.xm by Drozerix Public Domain https://modarchive.org/index.php?request=view_by_moduleid&query=192354
+chips_kdance8.mod by CHIPs under Public Domain license https://modarchive.org/index.php?request=view_by_moduleid&query=179446
+neon_techno.mod by Drozerix under Public Domain license https://modarchive.org/index.php?request=view_by_moduleid&query=178172
+
+Graphics
+blue_space_bg.bmp based on "Space Background 01" CC0 https://opengameart.org/content/space-background-01
+score font CC0 from https://github.com/damianvila/font-bescii
+Human head model CC0 https://blendswap.com/blend/21626
+GBA Jam 24 splash screen CC BY-NC https://github.com/gbadev-org/gbajam24-assets/tree/main
+player_small.bmp, rotobot.bmp, small_yellow_bullet.bmp, tiny_pink_bullet.bmp by DreamOre licensed under CC BY-NC 4.0 https://www.artstation.com/Dreamorestudio5
+all other graphics in the graphics folder by fixx licensed under CC BY-NC 4.0
+
+Sounds:
+All .wav files in the "audio" folder are made by fixx licensed under CC BY-NC 4.0

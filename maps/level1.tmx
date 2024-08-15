@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="1024" height="19" tilewidth="8" tileheight="8" infinite="0" nextlayerid="3" nextobjectid="181">
+ <tileset firstgid="1" source="tileset_objects.tsx"/>
+ <objectgroup id="2" name="objects">
+  <object id="4" name="donut" gid="1" x="3200" y="32" width="32" height="32"/>
+  <object id="9" name="donut" gid="1" x="3200" y="152" width="32" height="32"/>
+  <object id="10" name="donut" gid="1" x="3232" y="64" width="32" height="32"/>
+  <object id="11" name="donut" gid="1" x="3264" y="92" width="32" height="32"/>
+  <object id="12" name="donut" gid="1" x="3232" y="120" width="32" height="32"/>
+  <object id="13" name="donut" gid="1" x="3296" y="64" width="32" height="32"/>
+  <object id="14" name="donut" gid="1" x="3328" y="32" width="32" height="32"/>
+  <object id="15" name="donut" gid="1" x="3296" y="120" width="32" height="32"/>
+  <object id="16" name="donut" gid="1" x="864" y="64" width="32" height="32"/>
+  <object id="17" name="donut" gid="1" x="752" y="120" width="32" height="32"/>
+  <object id="18" name="donut" gid="1" x="864" y="120" width="32" height="32"/>
+  <object id="19" name="donut" gid="1" x="752" y="64" width="32" height="32"/>
+  <object id="20" name="donut" gid="1" x="808" y="32" width="32" height="32"/>
+  <object id="21" name="donut" gid="1" x="808" y="152" width="32" height="32"/>
+  <object id="22" name="donut" gid="1" x="3328" y="152" width="32" height="32"/>
+  <object id="25" name="donut" gid="1" x="1088" y="112" width="32" height="32"/>
+  <object id="26" name="donut" gid="1" x="1120" y="72" width="32" height="32"/>
+  <object id="27" name="donut" gid="1" x="1152" y="112" width="32" height="32"/>
+  <object id="28" name="donut" gid="1" x="1184" y="72" width="32" height="32"/>
+  <object id="29" name="donut" gid="1" x="1480" y="152" width="32" height="32"/>
+  <object id="30" name="donut" gid="1" x="1480" y="32" width="32" height="32"/>
+  <object id="31" name="donut" gid="1" x="1544" y="152" width="32" height="32"/>
+  <object id="32" name="donut" gid="1" x="1544" y="32" width="32" height="32"/>
+  <object id="33" name="donut" gid="1" x="1744" y="32" width="32" height="32"/>
+  <object id="34" name="donut" gid="1" x="1744" y="64" width="32" height="32"/>
+  <object id="35" name="donut" gid="1" x="1600" y="92" width="32" height="32"/>
+  <object id="36" name="donut" gid="1" x="1744" y="120" width="32" height="32"/>
+  <object id="37" name="donut" gid="1" x="1744" y="152" width="32" height="32"/>
+  <object id="41" gid="3" x="5728" y="32" width="32" height="32"/>
+  <object id="42" gid="3" x="5728" y="152" width="32" height="32"/>
+  <object id="43" gid="3" x="5760" y="120" width="32" height="32"/>
+  <object id="44" gid="3" x="5760" y="64" width="32" height="32"/>
+  <object id="45" gid="3" x="5793" y="91" width="32" height="32"/>
+  <object id="46" gid="5" x="6360" y="80" width="32" height="32"/>
+  <object id="47" gid="6" x="6368" y="112" width="32" height="32"/>
+  <object id="51" name="donut" gid="1" x="920" y="32" width="32" height="32"/>
+  <object id="52" name="donut" gid="1" x="920" y="152" width="32" height="32"/>
+  <object id="53" name="donut" gid="1" x="976" y="64" width="32" height="32"/>
+  <object id="54" name="donut" gid="1" x="976" y="120" width="32" height="32"/>
+  <object id="55" gid="2" x="40" y="152" width="32" height="32"/>
+  <object id="56" gid="2" x="40" y="32" width="32" height="32"/>
+  <object id="57" gid="2" x="120" y="144" width="32" height="32"/>
+  <object id="58" gid="2" x="120" y="40" width="32" height="32"/>
+  <object id="59" gid="2" x="288" y="152" width="32" height="32"/>
+  <object id="60" gid="2" x="288" y="32" width="32" height="32"/>
+  <object id="61" gid="2" x="344" y="32" width="32" height="32"/>
+  <object id="62" gid="2" x="344" y="152" width="32" height="32"/>
+  <object id="63" gid="2" x="448" y="64" width="32" height="32"/>
+  <object id="64" gid="2" x="448" y="120" width="32" height="32"/>
+  <object id="65" gid="2" x="480" y="32" width="32" height="32"/>
+  <object id="66" gid="2" x="480" y="152" width="32" height="32"/>
+  <object id="67" gid="2" x="608" y="64" width="32" height="32"/>
+  <object id="68" gid="2" x="608" y="120" width="32" height="32"/>
+  <object id="69" gid="2" x="640" y="32" width="32" height="32"/>
+  <object id="70" gid="2" x="640" y="152" width="32" height="32"/>
+  <object id="71" gid="2" x="1328" y="56" width="32" height="32"/>
+  <object id="72" gid="2" x="1296" y="88" width="32" height="32"/>
+  <object id="73" gid="2" x="1328" y="120" width="32" height="32"/>
+  <object id="74" name="donut" gid="1" x="3408" y="32" width="32" height="32"/>
+  <object id="75" name="donut" gid="1" x="3408" y="152" width="32" height="32"/>
+  <object id="76" name="donut" gid="1" x="3440" y="64" width="32" height="32"/>
+  <object id="77" name="donut" gid="1" x="3472" y="92" width="32" height="32"/>
+  <object id="78" name="donut" gid="1" x="3440" y="120" width="32" height="32"/>
+  <object id="79" name="donut" gid="1" x="3504" y="64" width="32" height="32"/>
+  <object id="80" name="donut" gid="1" x="3536" y="32" width="32" height="32"/>
+  <object id="81" name="donut" gid="1" x="3504" y="120" width="32" height="32"/>
+  <object id="82" name="donut" gid="1" x="3536" y="152" width="32" height="32"/>
+  <object id="83" name="donut" gid="1" x="3624" y="32" width="32" height="32"/>
+  <object id="84" name="donut" gid="1" x="3624" y="152" width="32" height="32"/>
+  <object id="85" name="donut" gid="1" x="3656" y="64" width="32" height="32"/>
+  <object id="86" name="donut" gid="1" x="3688" y="92" width="32" height="32"/>
+  <object id="87" name="donut" gid="1" x="3656" y="120" width="32" height="32"/>
+  <object id="88" name="donut" gid="1" x="3720" y="64" width="32" height="32"/>
+  <object id="89" name="donut" gid="1" x="3752" y="32" width="32" height="32"/>
+  <object id="90" name="donut" gid="1" x="3720" y="120" width="32" height="32"/>
+  <object id="91" name="donut" gid="1" x="3752" y="152" width="32" height="32"/>
+  <object id="92" gid="3" x="3864" y="32" width="32" height="32"/>
+  <object id="93" gid="3" x="3864" y="152" width="32" height="32"/>
+  <object id="94" gid="3" x="4096" y="56" width="32" height="32"/>
+  <object id="95" gid="3" x="4096" y="120" width="32" height="32"/>
+  <object id="101" gid="3" x="4344" y="32" width="32" height="32"/>
+  <object id="102" gid="3" x="4344" y="152" width="32" height="32"/>
+  <object id="103" gid="2" x="4240" y="56" width="32" height="32"/>
+  <object id="105" gid="2" x="4240" y="120" width="32" height="32"/>
+  <object id="106" gid="2" x="4432" y="56" width="32" height="32"/>
+  <object id="107" gid="2" x="4432" y="120" width="32" height="32"/>
+  <object id="108" gid="2" x="4584" y="32" width="32" height="32"/>
+  <object id="109" gid="2" x="5760" y="88" width="32" height="32"/>
+  <object id="110" gid="2" x="4584" y="152" width="32" height="32"/>
+  <object id="112" gid="2" x="4584" y="64" width="32" height="32"/>
+  <object id="113" gid="2" x="4584" y="120" width="32" height="32"/>
+  <object id="114" gid="2" x="4824" y="32" width="32" height="32"/>
+  <object id="115" gid="2" x="4824" y="152" width="32" height="32"/>
+  <object id="116" gid="2" x="4824" y="64" width="32" height="32"/>
+  <object id="117" gid="2" x="4824" y="120" width="32" height="32"/>
+  <object id="118" gid="3" x="4968" y="64" width="32" height="32"/>
+  <object id="119" gid="3" x="4968" y="120" width="32" height="32"/>
+  <object id="120" gid="2" x="5056" y="56" width="32" height="32"/>
+  <object id="121" gid="2" x="5056" y="120" width="32" height="32"/>
+  <object id="122" gid="3" x="5192" y="48" width="32" height="32"/>
+  <object id="123" gid="3" x="5192" y="136" width="32" height="32"/>
+  <object id="124" gid="2" x="5280" y="56" width="32" height="32"/>
+  <object id="125" gid="2" x="5280" y="120" width="32" height="32"/>
+  <object id="126" gid="3" x="5464" y="64" width="32" height="32"/>
+  <object id="127" gid="3" x="5464" y="120" width="32" height="32"/>
+  <object id="128" gid="2" x="5552" y="56" width="32" height="32"/>
+  <object id="129" gid="2" x="5552" y="120" width="32" height="32"/>
+  <object id="130" gid="3" x="5432" y="152" width="32" height="32"/>
+  <object id="131" gid="3" x="5432" y="32" width="32" height="32"/>
+  <object id="132" gid="3" x="4704" y="92" width="32" height="32"/>
+  <object id="133" gid="2" x="3576" y="64" width="32" height="32"/>
+  <object id="134" gid="2" x="3576" y="120" width="32" height="32"/>
+  <object id="137" gid="7" x="2784" y="88" width="32" height="32"/>
+  <object id="138" gid="4" x="3056" y="88" width="32" height="32"/>
+  <object id="139" gid="8" x="2784" y="152" width="32" height="32">
+   <properties>
+    <property name="music_index" value="1"/>
+   </properties>
+  </object>
+  <object id="140" gid="6" x="3064" y="56" width="32" height="32"/>
+  <object id="141" gid="8" x="3088" y="88" width="32" height="32">
+   <properties>
+    <property name="music_index" value="0"/>
+   </properties>
+  </object>
+  <object id="142" gid="7" x="6048" y="56" width="32" height="32"/>
+  <object id="143" gid="8" x="6048" y="104" width="32" height="32">
+   <properties>
+    <property name="music_index" value="2"/>
+   </properties>
+  </object>
+  <object id="144" gid="8" x="6376" y="144" width="32" height="32">
+   <properties>
+    <property name="music_index" value="0"/>
+   </properties>
+  </object>
+  <object id="145" gid="2" x="1888" y="152" width="32" height="32"/>
+  <object id="146" gid="2" x="1888" y="32" width="32" height="32"/>
+  <object id="147" gid="2" x="2016" y="64" width="32" height="32"/>
+  <object id="148" gid="2" x="2016" y="120" width="32" height="32"/>
+  <object id="149" name="donut" gid="1" x="1952" y="64" width="32" height="32"/>
+  <object id="150" name="donut" gid="1" x="1952" y="120" width="32" height="32"/>
+  <object id="151" gid="2" x="2152" y="64" width="32" height="32"/>
+  <object id="152" gid="2" x="2152" y="120" width="32" height="32"/>
+  <object id="153" name="donut" gid="1" x="2088" y="64" width="32" height="32"/>
+  <object id="154" name="donut" gid="1" x="2088" y="120" width="32" height="32"/>
+  <object id="155" gid="2" x="2248" y="152" width="32" height="32"/>
+  <object id="156" gid="2" x="2248" y="32" width="32" height="32"/>
+  <object id="157" name="donut" gid="1" x="2312" y="64" width="32" height="32"/>
+  <object id="158" name="donut" gid="1" x="2312" y="120" width="32" height="32"/>
+  <object id="159" name="donut" gid="1" x="2344" y="128" width="32" height="32"/>
+  <object id="160" name="donut" gid="1" x="2344" y="56" width="32" height="32"/>
+  <object id="161" name="donut" gid="1" x="2376" y="136" width="32" height="32"/>
+  <object id="162" name="donut" gid="1" x="2376" y="48" width="32" height="32"/>
+  <object id="163" name="donut" gid="1" x="2408" y="40" width="32" height="32"/>
+  <object id="164" name="donut" gid="1" x="2408" y="144" width="32" height="32"/>
+  <object id="165" name="donut" gid="1" x="2440" y="32" width="32" height="32"/>
+  <object id="166" name="donut" gid="1" x="2440" y="152" width="32" height="32"/>
+  <object id="167" gid="2" x="2528" y="152" width="32" height="32"/>
+  <object id="168" gid="2" x="2528" y="32" width="32" height="32"/>
+  <object id="169" gid="2" x="2528" y="92" width="32" height="32"/>
+  <object id="171" gid="10" x="1400" y="88" width="32" height="32"/>
+  <object id="172" gid="10" x="3120" y="56" width="32" height="32"/>
+  <object id="173" gid="10" x="4736" y="90.6667" width="32" height="32"/>
+  <object id="174" gid="10" x="688" y="88" width="32" height="32"/>
+  <object id="175" gid="10" x="2232" y="88" width="32" height="32"/>
+  <object id="176" gid="10" x="3808" y="88" width="32" height="32"/>
+  <object id="177" gid="10" x="5360" y="88" width="32" height="32"/>
+  <object id="178" gid="11" x="3136" y="128" width="32" height="32"/>
+  <object id="179" gid="11" x="6400" y="96" width="32" height="32"/>
+  <object id="180" gid="11" x="5016" y="88" width="32" height="32"/>
+ </objectgroup>
+</map>

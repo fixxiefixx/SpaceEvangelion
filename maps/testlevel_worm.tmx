@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="1024" height="19" tilewidth="8" tileheight="8" infinite="0" nextlayerid="3" nextobjectid="343">
+ <tileset firstgid="1" source="tileset_objects.tsx"/>
+ <objectgroup id="2" name="objects">
+  <object id="135" gid="1" x="56" y="88" width="32" height="32"/>
+  <object id="136" gid="1" x="128" y="88" width="32" height="32"/>
+  <object id="137" gid="1" x="208" y="88" width="32" height="32"/>
+  <object id="138" gid="1" x="296" y="88" width="32" height="32"/>
+  <object id="332" gid="11" x="176" y="88" width="32" height="32"/>
+  <object id="334" gid="15" x="680" y="88" width="32" height="32">
+   <properties>
+    <property name="index" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="335" gid="2" x="3520" y="88" width="32" height="32"/>
+  <object id="336" gid="10" x="1288" y="88" width="32" height="32"/>
+  <object id="338" gid="10" x="2560" y="88" width="32" height="32"/>
+  <object id="339" gid="7" x="456" y="56" width="32" height="32"/>
+  <object id="340" gid="8" x="456" y="120" width="32" height="32">
+   <properties>
+    <property name="music_index" value="1"/>
+   </properties>
+  </object>
+  <object id="342" gid="8" x="3520" y="120" width="32" height="32">
+   <properties>
+    <property name="music_index" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

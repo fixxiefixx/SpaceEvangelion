@@ -1,0 +1,12 @@
+/.vscode
+/build
+*.blend1
+/compile_and_run.bat
+*.elf
+*.gba
+*.sav
+.vs
+/tools/TiledImport/bin
+/tools/TiledImport/obj
+/tools/TiledImport/packages
+*.user
