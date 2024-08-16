@@ -10,7 +10,7 @@ blue_space_bg.bmp based on "Space Background 01" CC0 https://opengameart.org/con
 score font CC0 from https://github.com/damianvila/font-bescii
 Human head model CC0 https://blendswap.com/blend/21626
 GBA Jam 24 splash screen CC BY-NC https://github.com/gbadev-org/gbajam24-assets/tree/main
-player_small.bmp, rotobot.bmp, small_yellow_bullet.bmp, tiny_pink_bullet.bmp by DreamOre licensed under CC BY-NC 4.0 https://www.artstation.com/Dreamorestudio5
+player_small.bmp, rotobot.bmp, small_yellow_bullet.bmp, tiny_pink_bullet.bmp, manu.bmp by DreamOre licensed under CC BY-NC 4.0 https://www.artstation.com/Dreamorestudio5
 all other graphics in the graphics folder by fixx licensed under CC BY-NC 4.0
 
 Sounds:

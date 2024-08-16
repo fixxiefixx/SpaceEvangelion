@@ -27,6 +27,7 @@
 #include "bn_sram.h"
 #include "bn_string.h"
 #include "bn_bg_palettes.h"
+#include "gt_util.h"
 
 
 #define BG_SCROLL_SPEED 0.1
@@ -79,7 +80,7 @@ void menu_scene()
     bn::sprite_text_generator big_variable_text_generator(common::variable_8x16_sprite_font);
     big_variable_text_generator.set_center_alignment();
     bn::vector<bn::sprite_ptr, 32> text_sprites;
-    big_variable_text_generator.generate(0, 0, "> START", text_sprites);
+    big_variable_text_generator.generate(0, 12, "> START", text_sprites);
     bn::optional<int> score_opt = load_score();
     if(score_opt)
     {
@@ -135,6 +136,7 @@ void game_scene(int &level_index)
 
 
     bool music_was_playing=false;
+    bool half_speed = false;
     while(gt::globals::game_running)
     {
         if(bn::keypad::start_pressed())
@@ -188,6 +190,28 @@ void game_scene(int &level_index)
         }
         ui_instance.update();
         bn::core::update();
+        if(bn::keypad::l_held() || bn::keypad::r_held())
+        {
+            if(bn::music::playing())
+            {
+                bn::fixed new_val = gt::move_towards(bn::music::tempo(), 0.5, 0.06);
+                bn::music::set_tempo(new_val);
+                bn::music::set_pitch(new_val);
+            }
+
+            bn::core::update();
+            half_speed = true;
+        }else
+        {
+            if(bn::music::playing())
+            {
+            bn::fixed new_val = gt::move_towards(bn::music::tempo(), 1, 0.06);
+            bn::music::set_tempo(new_val);
+            bn::music::set_pitch(new_val);
+            }
+            half_speed = false;
+            
+        }
     }
     bn::optional<int> highscore_opt = load_score();
     if(!highscore_opt || (*highscore_opt) < gt::globals::ui->score())
