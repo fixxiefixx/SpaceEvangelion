@@ -8,7 +8,7 @@ neon_techno.mod by Drozerix under Public Domain license https://modarchive.org/i
 Graphics
 blue_space_bg.bmp based on "Space Background 01" CC0 https://opengameart.org/content/space-background-01
 score font CC0 from https://github.com/damianvila/font-bescii
-common_variable_8x16_font.bmp font created at Sparklin Labs by Pixel-boy: https://github.com/sparklinlabs/superpowers-asset-packs/blob/master/western-fps-2d/font-8x8.png licensed under CC0 1.0 Universal license.
+common_variable_8x16_font.bmp font created at Sparklin Labs by Pixel-boy: https://github.com/sparklinlabs/superpowers-asset-packs/tree/master licensed under CC0 1.0 Universal license.
 Human head model CC0 https://blendswap.com/blend/21626
 GBA Jam 24 splash screen CC BY-NC https://github.com/gbadev-org/gbajam24-assets/tree/main
 player_small.bmp, rotobot.bmp, small_yellow_bullet.bmp, tiny_pink_bullet.bmp, manu.bmp by DreamOre licensed under CC BY-NC 4.0 https://www.artstation.com/Dreamorestudio5
