@@ -5,6 +5,7 @@
 #include "gt_globals.h"
 #include "gt_go_blood_splash.h"
 #include "gt_go_enemy_bullet.h"
+#include "gt_go_worm_bomb.h"
 
 #define __ go_tilemap
 
@@ -46,6 +47,7 @@ namespace gt
         cell_full = map_item.cell(14, 31);
         cell_tumor = map_item.cell(16, 31);
         cell_enemy = map_item.cell(17, 31);
+        cell_explosive = map_item.cell(18, 31);
 
         // update all cells
         /*
@@ -250,6 +252,13 @@ namespace gt
         return bn::point(cell_x, cell_y);
     }
 
+    bn::fixed_point __::cell_coord_to_pos(bn::point cell_coord)
+    {
+        bn::fixed pos_x = bg_ptr.x() + bn::fixed((cell_coord.x() - bg_map.dimensions().width() / 2) * 8) + 4; 
+        bn::fixed pos_y = bg_ptr.y() + bn::fixed((cell_coord.y() - bg_map.dimensions().height() / 2) * 8) + 4; 
+        return bn::fixed_point(pos_x, pos_y);
+    }
+
     bool __::is_cell_pos_inside_grid(bn::point cell_pos)
     {
         if (cell_pos.x() < 0)
@@ -277,7 +286,9 @@ namespace gt
         {
             if(cell != cell_tumor)
             {
-                bool contains_enemy = cells[map_item.cell_index(cell_pos.x(),cell_pos.y()+32)] == cell_enemy;
+                bn::regular_bg_map_cell logic_cell = cells[map_item.cell_index(cell_pos.x(),cell_pos.y()+32)];
+                bool contains_enemy = logic_cell == cell_enemy;
+                bool contains_explosive = logic_cell == cell_explosive;
 
                 cells[map_item.cell_index(cell_pos)] = cell_empty;
 
@@ -304,11 +315,15 @@ namespace gt
 
                 if(contains_enemy)
                 {
-                    globals::go_manager->add_object(new go_enemy_bullet(pos,bn::fixed_point(-2,0)));
+                    globals::go_manager->add_object(new go_enemy_bullet(cell_coord_to_pos(cell_pos),bn::fixed_point(-1,0)));
+                }
+                else if(contains_explosive)
+                {
+                    globals::go_manager->add_object(new go_worm_bomb(cell_coord_to_pos(cell_pos), cell_pos));
                 }
                 else
                 {
-                    globals::go_manager->add_object(new go_blood_splash(pos));
+                    globals::go_manager->add_object(new go_blood_splash(cell_coord_to_pos(cell_pos)));
                 }
             }
             return true;
@@ -335,6 +350,43 @@ namespace gt
             }
         }
         return false;
+    }
+
+    void __::tile_explosion(bn::point cell_pos)
+    {
+        for(int y = cell_pos.y() - 1;y <= cell_pos.y() + 1; y++)
+        {
+            for(int x = cell_pos.x() - 1; x <= cell_pos.x() + 1; x++)
+            {
+                bn::point cell_pos = bn::point(x, y);
+                if(is_cell_pos_inside_grid(cell_pos))
+                {
+                    bn::regular_bg_map_cell cell = cells[map_item.cell_index(cell_pos)];
+                    bn::regular_bg_map_cell logic_cell = cells[map_item.cell_index(cell_pos.x(),cell_pos.y()+32)];
+                    if(cell != cell_empty && logic_cell != cell_tumor)
+                    {
+                        if(logic_cell == cell_explosive)
+                        {
+                            globals::go_manager->add_object(new go_worm_bomb(cell_coord_to_pos(cell_pos), cell_pos));
+                        }
+                        cells[map_item.cell_index(cell_pos)] = cell_empty;
+                    }
+                }
+            }
+        }
+
+        for(int y = cell_pos.y() - 2;y <= cell_pos.y() + 2; y++)
+        {
+            for(int x = cell_pos.x() - 2; x <= cell_pos.x() + 2; x++)
+            {
+                bn::point cell_pos = bn::point(x, y);
+                if(is_cell_pos_inside_grid(cell_pos))
+                {
+                    update_cell(cell_pos.x(), cell_pos.y());
+                }
+            }
+        }
+        needs_rebuild = true;
     }
 
     __::~__()

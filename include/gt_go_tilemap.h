@@ -16,8 +16,10 @@ namespace gt
             virtual bn::optional<bn::fixed_point> get_pos() override;
             bool do_bullet_collision(bn::fixed_point pos);
             bn::point pos_to_cell_coord(bn::fixed_point pos);
+            bn::fixed_point cell_coord_to_pos(bn::point cell_coord);
             bool is_cell_pos_inside_grid(bn::point cell_pos);
             bool is_colliding_with(bn::fixed_rect rect);
+            void tile_explosion(bn::point cell_pos);
             ~go_tilemap();
         
         private:
@@ -46,6 +48,7 @@ namespace gt
             bn::regular_bg_map_cell cell_full = 0;
             bn::regular_bg_map_cell cell_tumor = 0;
             bn::regular_bg_map_cell cell_enemy = 0;
+            bn::regular_bg_map_cell cell_explosive = 0;
             bool needs_rebuild = false;
     };
 }

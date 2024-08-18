@@ -2,11 +2,14 @@
 #include "bn_sprite_items_explosion.h"
 #include "bn_sprite_items_explosion2.h"
 #include "bn_sound_items.h"
+#include "gt_globals.h"
 
 #define __ go_explosion
 
 namespace
 {
+    unsigned int sound_time = 0;
+
     bn::sprite_animate_action<14> _create_animation_explode(bn::sprite_ptr sprite)
     {
         return bn::create_sprite_animate_action_once(
@@ -26,8 +29,14 @@ namespace gt
         _sprite(bn::sprite_items::explosion2.create_sprite(pos)),
         _action(_create_animation_explode2(_sprite))
     {
-        bn::sound_items::explosion.play(0.8);
+        if(globals::time - sound_time > 10)
+        {
+            sound_time = globals::time;
+            bn::sound_items::explosion.play(0.8);
+        }
+        
         _sprite.set_z_order(-4);
+        _sprite.set_bg_priority(2);
     }
 
 
